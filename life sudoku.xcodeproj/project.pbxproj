@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		5FA6B9A31E3D48E1007FB8E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA6B9A21E3D48E1007FB8E0 /* AppDelegate.swift */; };
-		5FA6B9A51E3D48E1007FB8E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA6B9A41E3D48E1007FB8E0 /* ViewController.swift */; };
+		5FA6B9A51E3D48E1007FB8E0 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA6B9A41E3D48E1007FB8E0 /* MainController.swift */; };
 		5FA6B9A81E3D48E1007FB8E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FA6B9A61E3D48E1007FB8E0 /* Main.storyboard */; };
 		5FA6B9AA1E3D48E1007FB8E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FA6B9A91E3D48E1007FB8E0 /* Assets.xcassets */; };
 		5FA6B9AD1E3D48E1007FB8E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FA6B9AB1E3D48E1007FB8E0 /* LaunchScreen.storyboard */; };
 		5FA6B9B81E3D48E1007FB8E0 /* life_sudokuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA6B9B71E3D48E1007FB8E0 /* life_sudokuTests.swift */; };
 		5FA6B9C31E3D48E1007FB8E0 /* life_sudokuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA6B9C21E3D48E1007FB8E0 /* life_sudokuUITests.swift */; };
+		5FE9770D1E4692DF001D38A8 /* EditPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE9770C1E4692DF001D38A8 /* EditPickerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		5FA6B99F1E3D48E1007FB8E0 /* life sudoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "life sudoku.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FA6B9A21E3D48E1007FB8E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5FA6B9A41E3D48E1007FB8E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5FA6B9A41E3D48E1007FB8E0 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		5FA6B9A71E3D48E1007FB8E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5FA6B9A91E3D48E1007FB8E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FA6B9AC1E3D48E1007FB8E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		5FA6B9BE1E3D48E1007FB8E0 /* life sudokuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "life sudokuUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FA6B9C21E3D48E1007FB8E0 /* life_sudokuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = life_sudokuUITests.swift; sourceTree = "<group>"; };
 		5FA6B9C41E3D48E1007FB8E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FE9770C1E4692DF001D38A8 /* EditPickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPickerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				5FA6B9A21E3D48E1007FB8E0 /* AppDelegate.swift */,
-				5FA6B9A41E3D48E1007FB8E0 /* ViewController.swift */,
+				5FA6B9A41E3D48E1007FB8E0 /* MainController.swift */,
+				5FE9770C1E4692DF001D38A8 /* EditPickerController.swift */,
 				5FA6B9A61E3D48E1007FB8E0 /* Main.storyboard */,
 				5FA6B9A91E3D48E1007FB8E0 /* Assets.xcassets */,
 				5FA6B9AB1E3D48E1007FB8E0 /* LaunchScreen.storyboard */,
@@ -259,7 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FA6B9A51E3D48E1007FB8E0 /* ViewController.swift in Sources */,
+				5FA6B9A51E3D48E1007FB8E0 /* MainController.swift in Sources */,
+				5FE9770D1E4692DF001D38A8 /* EditPickerController.swift in Sources */,
 				5FA6B9A31E3D48E1007FB8E0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +509,7 @@
 				5FA6B9C91E3D48E1007FB8E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5FA6B9CA1E3D48E1007FB8E0 /* Build configuration list for PBXNativeTarget "life sudokuTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +518,7 @@
 				5FA6B9CC1E3D48E1007FB8E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5FA6B9CD1E3D48E1007FB8E0 /* Build configuration list for PBXNativeTarget "life sudokuUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +527,7 @@
 				5FA6B9CF1E3D48E1007FB8E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

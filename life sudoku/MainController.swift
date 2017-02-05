@@ -1,18 +1,12 @@
-//
-//  ViewController.swift
-//  life sudoku
-//
-//  Created by Julia Kieserman on 1/28/17.
-//  Copyright © 2017 Julia Kieserman. All rights reserved.
-//
-
 import UIKit
 
-class ViewController: UIViewController, UIPickerViewDataSource,UIPickerViewDelegate {
+class MainViewController: UIViewController, UIPickerViewDataSource,UIPickerViewDelegate {
     
     @IBOutlet weak var categoryPicker: UIPickerView!
     
     var pickerData: [String] = [String]()
+    
+    @IBOutlet weak var editPickerData: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +14,13 @@ class ViewController: UIViewController, UIPickerViewDataSource,UIPickerViewDeleg
         self.categoryPicker.dataSource = self
         self.categoryPicker.delegate = self
         
-           pickerData = ["sleep", "work", "exercise"]
+        pickerData = ["sleep", "work", "exercise"]
+        
+    }
+    
+   @IBAction func editPickerDataShow(_ sender: AnyObject) {
+    
+        self.performSegue(withIdentifier: "showEditPicker", sender:self)
 
     }
 
@@ -40,5 +40,6 @@ class ViewController: UIViewController, UIPickerViewDataSource,UIPickerViewDeleg
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return pickerData[row]
     }
+    
+    
 }
-
