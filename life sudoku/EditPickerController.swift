@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import Foundation
+import SwiftHSVColorPicker
 
 class EditPickerController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+ 
+    @IBOutlet var colorPicker: SwiftHSVColorPicker!
 
     @IBOutlet weak var pickerTableView: UITableView!
     let cellReuseIdentifier = "cell"
@@ -18,13 +22,18 @@ class EditPickerController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         pickerData = ["sleep", "work", "exercise"]
+        //colorPicker.setViewColor(UIColor.red)
+
 
         // Do any additional setup after loading the view.
         self.pickerTableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
         pickerTableView.delegate = self
         pickerTableView.dataSource = self
+        
+        title = "Activity Types"
     }
 
     override func didReceiveMemoryWarning() {
@@ -69,6 +78,7 @@ class EditPickerController: UIViewController, UITableViewDelegate, UITableViewDa
             
         } else if editingStyle == .insert {
             // Not used in our example, but if you were adding a new row, this is where you would do it.
+            print("is this it?")
         }
     }
 
